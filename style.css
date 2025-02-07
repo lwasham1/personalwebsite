@@ -1,0 +1,111 @@
+/* Global Styles */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 115%;
+  display: flex;
+  flex-direction: column;
+}
+body {
+  background-color: black;
+  border: 10px solid rgb(255, 255, 255);
+}
+
+/* Header Styles */
+.name {
+  font-family: 'Fira Sans', sans-serif;
+  color: white;
+  font-size: 105px;
+}
+
+.main-header {
+  text-align: center;
+  padding: 5px;
+  background-color: #000;
+}
+
+.aboutMe-header {
+  color: white;
+  font-size: 35px;
+}
+
+/* Navigation Bar */
+.navbar {
+  text-align: center;
+  padding: 100px 0; /* If you want info containers higher, consider reducing this */
+}
+
+/* Container for Nav Links (unchanged) */
+.container {
+  margin: 0 auto;
+  background-color: transparent;
+}
+
+.navlinks {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  padding: 0;
+  margin: 0;
+  border: 2.5px solid rgb(255, 255, 255);
+}
+
+.navlinks li a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: transparent;
+  color: white;
+  text-decoration: none;
+  border: 3px solid white;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navlinks li a:hover {
+  background-color: white;
+  color: black;
+}
+
+/* Updated Info Containers */
+.import-info {
+  flex: 1;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;  /* Align items at the top */
+  gap: 20px;                /* Reduce gap as needed */
+  margin: 20px auto;        /* Adjust top margin to move the section upward */
+}
+
+.info-container {
+  background-color: transparent;
+  /* Removed fixed margin to allow closer spacing */
+  /* Optionally, remove a fixed height so the container adapts to its content */
+  width: 300px;
+  /* Use 'auto' height or remove this if you want the container size to adjust */
+  height: auto;
+  border: 2.5px solid white;
+  padding: 10px;  /* Add some internal spacing */
+  /* margin: 0;  (No extra margin to keep them closer) */
+}
+
+p, h2 {
+  color: white;
+}
+footer{
+  width: 100%;
+  background-color: white; /* White background */
+  padding: 10px 0; /* Vertical padding for spacing */
+  position: relative;
+  bottom: 0;
+  left: 0;
+}
+.footer-text{
+  text-align: center; /* Center the text */
+ 
+  padding: 20px; /* Add padding inside the white box */
+  font-size: 20px;
+
+}
